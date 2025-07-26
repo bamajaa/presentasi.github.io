@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Presentasi Lingkungan Hidup</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f8ff;
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2e8b57;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      background: #d9f3e7;
+      border-radius: 10px;
+      margin-top: 20px;
+      overflow: hidden;
+    }
+
+    .tab-button {
+      flex: 1;
+      padding: 15px;
+      cursor: pointer;
+      text-align: center;
+      background-color: #b6e2cc;
+      border: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .tab-button:hover,
+    .tab-button.active {
+      background-color: #2e8b57;
+      color: white;
+    }
+
+    .tab-content {
+      display: none;
+      padding: 20px;
+      background: white;
+      border-radius: 0 0 10px 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    ul {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Presentasi Lingkungan Hidup</h1>
+
+    <div class="tabs">
+      <button class="tab-button active" onclick="openTab(0)">1. Komponen</button>
+      <button class="tab-button" onclick="openTab(1)">2. Ciri-ciri</button>
+      <button class="tab-button" onclick="openTab(2)">3. Interaksi Biotik-Abiotik</button>
+      <button class="tab-button" onclick="openTab(3)">4. Interaksi Biotik</button>
+      <button class="tab-button" onclick="openTab(4)">5. Pencemaran</button>
+    </div>
+
+    <div class="tab-content active">
+      <h2>1. Komponen Lingkungan Hidup</h2>
+      <p>Lingkungan hidup terdiri dari dua komponen utama:</p>
+      <ul>
+        <li><strong>Komponen Biotik</strong>: Organisme hidup seperti hewan, tumbuhan, fungi, dan mikroorganisme.</li>
+        <li><strong>Komponen Abiotik</strong>: Faktor non-hidup seperti air, udara, tanah, cahaya matahari, dan suhu.</li>
+      </ul>
+    </div>
+
+    <div class="tab-content">
+      <h2>2. Ciri-ciri Makhluk Hidup</h2>
+      <ul>
+        <li>Bernapas</li>
+        <li>Bergerak</li>
+        <li>Tumbuh dan berkembang</li>
+        <li>Memerlukan nutrisi</li>
+        <li>Menghasilkan keturunan</li>
+        <li>Merespons rangsangan</li>
+        <li>Beradaptasi dengan lingkungan</li>
+      </ul>
+    </div>
+
+    <div class="tab-content">
+      <h2>3. Interaksi Komponen Biotik dan Abiotik</h2>
+      <p>Interaksi penting untuk keseimbangan ekosistem, contoh:</p>
+      <ul>
+        <li>Fotosintesis oleh tumbuhan menggunakan cahaya matahari</li>
+        <li>Siklus air: diserap tumbuhan dan digunakan hewan</li>
+        <li>Ketergantungan hewan pada tumbuhan untuk makanan dan oksigen</li>
+      </ul>
+    </div>
+
+    <div class="tab-content">
+      <h2>4. Interaksi Antar Komponen Biotik</h2>
+      <ul>
+        <li>Predasi (pemangsaan)</li>
+        <li>Kompetisi (persaingan)</li>
+        <li>Simbiosis (mutualisme, komensalisme, parasitisme)</li>
+        <li>Reproduksi dan penyebaran biji</li>
+      </ul>
+    </div>
+
+    <div class="tab-content">
+      <h2>5. Jenis-jenis Pencemaran Lingkungan</h2>
+      <ul>
+        <li><strong>Pencemaran Udara</strong>: CO, CO2, SO2, NOx, dll.</li>
+        <li><strong>Pencemaran Air</strong>: Limbah industri, pertanian, domestik.</li>
+        <li><strong>Pencemaran Tanah</strong>: Limbah padat, bahan kimia berbahaya.</li>
+        <li><strong>Pencemaran Suara</strong>: Kebisingan dari industri dan transportasi.</li>
+      </ul>
+      <p><em>Dengan memahami komponen lingkungan, interaksi, dan pencemaran, kita bisa menjaga dan melestarikan lingkungan hidup. 🌟</em></p>
+    </div>
+
+    <div class="footer">
+      &copy;  Tugas Sekolah Lingkungan Hidup
+    </div>
+  </div>
+
+  <script>
+    function openTab(index) {
+      const tabs = document.querySelectorAll('.tab-content');
+      const buttons = document.querySelectorAll('.tab-button');
+
+      tabs.forEach((tab, i) => {
+        tab.classList.toggle('active', i === index);
+        buttons[i].classList.toggle('active', i === index);
+      });
+    }
+  </script>
+</body>
+</html>
